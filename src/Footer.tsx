@@ -38,7 +38,10 @@ export interface FooterProps {
   copyright?: string;
 }
 
-const FooterView: React.FC<FooterProps> = ({ links, copyright }: FooterProps) => (
+const FooterView: React.FC<FooterProps> = ({
+  links,
+  copyright,
+}: FooterProps) => (
   <Footer style={{ padding: 0 }}>
     <GlobalFooter
       links={links || defaultLinks}
